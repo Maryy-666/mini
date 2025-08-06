@@ -1,0 +1,93 @@
+body {
+  background-color: #000000;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding-top: 50px;
+  margin: 0;
+}
+
+.message {
+  color: #b90f0f;
+  animation: fadeIn 2s ease-in;
+}
+
+.buttons {
+  margin: 20px;
+}
+
+button {
+  font-size: 20px;
+  padding: 10px 30px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.yes-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.no-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.cat {
+  font-size: 100px;
+  animation: bounce 2s infinite;
+  margin-top: 40px;
+}
+
+/* Animasyonlar */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0);}
+  50% { transform: translateY(-20px);}
+}
+
+.gwen-img {
+  width: 200px;
+  max-width: 90%;
+  margin-top: 30px;
+  animation: bounce 2s infinite;
+}
+
+
+.full-screen-yes {
+  background-color: #850000;
+  color: white;
+  font-size: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+  transition: all 0.5s ease;
+  padding: 20px;
+}
+
+
+.full-screen-no {
+  background-color: #f44336;
+  color: white;
+  font-size: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  animation: fadeIn 0.5s ease;
+  transition: all 0.5s ease;
+}
